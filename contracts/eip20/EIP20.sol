@@ -8,7 +8,7 @@ pragma solidity ^0.4.21;
 import "./EIP20Interface.sol";
 
 
-contract EIP20 is EIP20Interface {
+contract GOLDK58, "GK58" is EIP20Interface {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -23,15 +23,14 @@ contract EIP20 is EIP20Interface {
     uint8 public decimals;                //How many decimals to show.
     string public symbol;                 //An identifier: eg SBX
 
-    function EIP20(
-        uint256 _initialAmount,
-        string _tokenName,
-        uint8 _decimalUnits,
-        string _tokenSymbol
-    ) public {
+    function GOLDK58, "GK58" (
+        uint256 _initialamount,23,000,000
+        string _tokenName,GOLDK58
+        uint8 _decimalUnits,00000000
+        string _tokenSymbolGK58 GOLDK58 TOKEN LOGO    ) public {
         balances[msg.sender] = _initialAmount;               // Give the creator all initial tokens
         totalSupply = _initialAmount;                        // Update total supply
-        name = _tokenName;                                   // Set the name for display purposes
+        name = _tokenName;                                  // Set the name for display purposes
         decimals = _decimalUnits;                            // Amount of decimals for display purposes
         symbol = _tokenSymbol;                               // Set the symbol for display purposes
     }
