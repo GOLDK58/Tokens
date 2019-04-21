@@ -8,7 +8,7 @@ pragma solidity ^0.4.21;
 import "./EIP20Interface.sol";
 
 
-contract EIP20 is EIP20Interface {
+contract GOLDK58, "GK58" is EIP20Interface {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -19,21 +19,20 @@ contract EIP20 is EIP20Interface {
     They allow one to customise the token contract & in no way influences the core functionality.
     Some wallets/interfaces might not even bother to look at this information.
     */
-    string public name;                   //fancy name: eg Simon Bucks
-    uint8 public decimals;                //How many decimals to show.
-    string public symbol;                 //An identifier: eg SBX
+    string public name;                  
+    uint8 public decimals;                
+    string public symbol;                
 
-    function EIP20(
-        uint256 _initialAmount,
-        string _tokenName,
-        uint8 _decimalUnits,
-        string _tokenSymbol
-    ) public {
-        balances[msg.sender] = _initialAmount;               // Give the creator all initial tokens
-        totalSupply = _initialAmount;                        // Update total supply
-        name = _tokenName;                                   // Set the name for display purposes
-        decimals = _decimalUnits;                            // Amount of decimals for display purposes
-        symbol = _tokenSymbol;                               // Set the symbol for display purposes
+    function GOLDK58, "GK58" (
+        uint256 _initialamount,23,000,000
+        string _tokenName, GOLDK58, "GK58"
+        uint8 _decimalUnits, OOOOOOOO
+        string _ ) public {
+        balances[msg.sender] = _initialAmount;             
+        totalSupply = _initialAmount;                      
+        name = _tokenName;                                
+        decimals = _decimalUnits;                           
+        symbol = _tokenSymbol;                              
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
